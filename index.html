@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Modulo di Registrazione</title>
+    <meta name="description" content="Modulo di Registrazione">
+</head>
+<body>
+<h3>Modulo di registrazione</h3>
+<p>Si prega di compilare tutti i campi del form per effettuare la registrazione.</p>
+<form name="datiUtente" action="#" method="GET">
+    <table cellspacing="1" cellpadding="1" border="0">
+        <tr>
+            <td><label for="nome">Nome:</label></td>
+            <td><input type="text" id="nome" name="nome" placeholder="Nome"></td>
+        </tr>
+        <tr>
+            <td><label for="cognome">Cognome:</label></td>
+            <td><input type="text" id="cognome" name="cognome" placeholder="Cognome"></td>
+        </tr>
+        <tr>
+            <td><label for="nascita">Data di nascita:</label></td>
+            <td><input type="date" id="nascita" name="nascita"></td>
+        </tr>
+        <tr>
+            <td><label for="titolo">Titolo di studio:</label></td>
+            <td>
+                <select id="titolo" name="titolo">
+                    <option value="licenza">Licenza media</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="laurea">Laurea</option>
+                    <option value="altro">Altro</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Email" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" placeholder="Password" required></td>
+        </tr>
+        <tr>
+            <td><label for="curriculum">Curriculum:</label></td>
+            <td><input type="url" id="curriculum" name="curriculum" placeholder="Curriculum"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">Autorizzo il trattamento dei dati personali</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Registrati">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
